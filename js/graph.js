@@ -32,6 +32,7 @@ function graph7Date(){
                  backgroundColor: "rgb(200,100,100)",
                  borderColor: "rgb(200,100,100)",
                  fill: false,
+                 barThickness: 20,
              }]
          },
          options: {
