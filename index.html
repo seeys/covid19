@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>코로나 19 감염 현황</title>
+<<<<<<< Updated upstream
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -161,3 +162,185 @@
 <script src="js/graph.js"></script>
 <script src="js/sumGraph.js"></script>
 </html>
+=======
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/head-style.css" />
+    <link rel="stylesheet" href="css/today-data-style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <div class="main-header-container">
+      <h1 class="cotitle">코로나 19 감염 현황</h1>
+      <button class="brightness bx-5">
+        <img src="resource/brightness-control.png" />
+      </button>
+    </div>
+
+    <div class="clock-header-container">
+      <div class="clock-sub-header">
+        <span> </span> <br />
+        <span class="real-time-size"> </span> <br />
+        <span>오전 10시 이후에 업데이트 됩니다.</span>
+      </div>
+    </div>
+
+    <!-- MAP  Today.js-->
+
+    <div class="information-box-container">
+      <div class="information__box row">
+        <div class="information__box-infect box-border">
+          <span class="title">총 확진자</span>
+          <span class="title-val">ㅤ</span>
+          <span>ㅤ</span>
+        </div>
+
+        <div class="information__box-die box-border">
+          <span class="title">사망자</span>
+          <span class="title-val">ㅤ</span>
+          <span>ㅤ</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- MAP -->
+    <!-- 
+    <div class="kmap position-relative container-xl">
+      <img
+        class="kmap__map d-flex m-auto"
+        style="max-width: 100%; height: auto"
+        src="resource/transparentmap.png"
+      />
+      <div
+        class="kmap__air kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>검역</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__jeju kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>제주</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__gengnam kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>경남</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__geongbuk kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>경북</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__jeonnam kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>전남</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__jeonbuk kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>전북</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__chungnam kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>충남</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__chungbuk kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>충북</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__kangwon kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>강원</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__keounggi kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>경기</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__sejong kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>세종</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__ulsan kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>울산</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__daejun kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>대전</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__gangju kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>광주</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__inchun kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>인천</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__daegu kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>대구</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__busan kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>부산</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      <div
+        class="kmap__seoul kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
+      >
+        <span>서울</span>
+        <span>ㅤ</span>
+        <span>ㅤ</span>
+      </div>
+      -->
+    </div>
+  </body>
+  <script src="js/head.js"></script>
+  <script src="js/today.js"></script>
+  <script src="js/region.js"></script>
+</html>
+>>>>>>> Stashed changes

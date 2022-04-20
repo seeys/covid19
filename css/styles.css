@@ -32,6 +32,7 @@ body {
     font-size : 17px;
 }
 
+<<<<<<< Updated upstream
 .sub-header__clock span:first-child{
     font-size: 12px;
 }
@@ -49,6 +50,8 @@ body {
     padding-top: 40px;
 }
 
+=======
+>>>>>>> Stashed changes
 .brightness {
     margin-top: 6px;
     margin-left: 20px;
@@ -63,6 +66,7 @@ body {
     outline:none;
 }
 
+<<<<<<< Updated upstream
 
 
 .information__box-infect span:nth-child(2){
@@ -84,6 +88,10 @@ body {
 
 .kmap span:nth-child(2){
     font-weight: 600;
+=======
+.kmap span:nth-child(2) {
+  font-weight: 600;
+>>>>>>> Stashed changes
 }
 
 .kmap__air{
