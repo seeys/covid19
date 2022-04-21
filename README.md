@@ -1,9 +1,22 @@
-# covid19
+# COVID19 DATA PROJECT
 
-# HTML CSS JAVASCRIPT
+## 시작일
 
-## Result
- 
-![1](https://user-images.githubusercontent.com/69909093/124764833-575d5e00-df70-11eb-8387-8afbdbfc5ac6.png)
-![2](https://user-images.githubusercontent.com/69909093/124764856-5debd580-df70-11eb-86a8-703816c5b8a8.png)
+2021년 7월
 
+## 리팩토링월
+
+2022년 4월
+
+## 사용 기술
+
+HTML, CSS, JAVASCRIPT
+
+## 리팩토링 변경사항
+
+- bootstrap 사용안함
+- api key 비공개처리
+- ui 편의상 그래프 삭제
+- css파일 분리
+- 화면 크기에 따라 조정(권장 max-width:1200px)
+- 모바일환경 가능
