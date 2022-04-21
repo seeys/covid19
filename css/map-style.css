@@ -117,5 +117,43 @@
   left: 34%;
 }
 
-@media screen and (min-width: 500px) {
+/* SMALL SCREEN */
+@media screen and (max-width: 500px) {
+  .kmap__box span {
+    font-size: 0.1rem;
+  }
+  .kmap__box {
+    padding: 0.2rem;
+  }
+  .kmap__ulsan {
+    top: 52%;
+    right: 12%;
+  }
+  .kmap__busan {
+    top: 61%;
+    right: 19%;
+  }
+  .kmap__chungnam {
+    top: 38%;
+    left: 29%;
+  }
+
+  .kmap__sejong {
+    top: 33%;
+    left: 40%;
+  }
+
+  .kmap__chungbuk {
+    top: 30%;
+    left: 49%;
+  }
+
+  .kmap__daejun {
+    top: 42%;
+    left: 41%;
+  }
+  .kmap__inchun {
+    top: 21%;
+    left: 28%;
+  }
 }
