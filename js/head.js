@@ -39,12 +39,12 @@ function getUpdateDate() {
 
 function setDarkMode() {
   console.log("dark mode work");
-  document.body.style.background = "#121212";
+  document.body.style.background = "#4b4b4b";
 
   let doc = document.querySelector(".cotitle");
   doc.classList.add("isDark-fontcolor");
 
-  doc = document.querySelector(".sub-header__clock");
+  doc = document.querySelector(".clock-sub-header");
   doc.classList.add("isDark-fontcolor");
 
   doc = document.querySelector(".information__box");
@@ -57,7 +57,7 @@ function setDarkMode() {
   for (let x = 0; x < 18; x++) {
     doc[x].classList.remove("bg-light");
     doc[x].classList.add("bg-darkmode");
-    doc[x].classList.add("isDark-fontcolor");
+    //doc[x].classList.add("isDark-fontcolor");
   }
 
   doc = document.querySelector(".brightness");
@@ -73,7 +73,7 @@ function setWhiteMode() {
   let doc = document.querySelector(".cotitle");
   doc.classList.remove("isDark-fontcolor");
 
-  doc = document.querySelector(".sub-header__clock");
+  doc = document.querySelector(".clock-sub-header");
   doc.classList.remove("isDark-fontcolor");
 
   doc = document.querySelector(".information__box");

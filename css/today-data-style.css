@@ -11,7 +11,7 @@
 }
 
 .box-border {
-  box-shadow: 2px 2px 2px 2px lightgray;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   margin: 0.5rem;
   display: flex;
   flex-direction: column;

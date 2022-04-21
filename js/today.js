@@ -1,6 +1,4 @@
-const API_KEY =
-  "pZs%2BQbjTvsjYdeBc40z2fD7QRRi3lynCg2GLLsEj2n8%2B1thhngNGdz5RitRWetZTfHRlD0Etu%2BGFU6rTWSmIHg%3D%3D";
-
+import API_KEY from "./secret.js";
 function getDate() {
   /* 10시 전 업데이트 x 어제의 날짜 가져오기*/
   let today = new Date();

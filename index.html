@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>코로나 19 감염 현황</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/head-style.css" />
     <link rel="stylesheet" href="css/today-data-style.css" />
+    <link rel="stylesheet" href="css/map-style.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -44,143 +45,106 @@
     </div>
 
     <!-- MAP -->
-    <!-- 
+
     <div class="kmap position-relative container-xl">
       <img
         class="kmap__map d-flex m-auto"
         style="max-width: 100%; height: auto"
         src="resource/transparentmap.png"
       />
-      <div
-        class="kmap__air kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__air kmap__box">
         <span>검역</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__jeju kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__jeju kmap__box">
         <span>제주</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__gengnam kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__gengnam kmap__box">
         <span>경남</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__geongbuk kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__geongbuk kmap__box">
         <span>경북</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__jeonnam kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__jeonnam kmap__box">
         <span>전남</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__jeonbuk kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__jeonbuk kmap__box">
         <span>전북</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__chungnam kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__chungnam kmap__box">
         <span>충남</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__chungbuk kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__chungbuk kmap__box">
         <span>충북</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__kangwon kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__kangwon kmap__box">
         <span>강원</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__keounggi kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__keounggi kmap__box">
         <span>경기</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__sejong kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__sejong kmap__box">
         <span>세종</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__ulsan kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__ulsan kmap__box">
         <span>울산</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__daejun kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__daejun kmap__box">
         <span>대전</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__gangju kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__gangju kmap__box">
         <span>광주</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__inchun kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__inchun kmap__box">
         <span>인천</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__daegu kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__daegu kmap__box">
         <span>대구</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__busan kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__busan kmap__box">
         <span>부산</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      <div
-        class="kmap__seoul kmap__box shadow position-absolute d-flex flex-column align-items-center border py-1 px-3 bg-light"
-      >
+      <div class="kmap__seoul kmap__box">
         <span>서울</span>
         <span>ㅤ</span>
         <span>ㅤ</span>
       </div>
-      -->
     </div>
   </body>
-  <script src="js/head.js"></script>
-  <script src="js/today.js"></script>
-  <script src="js/region.js"></script>
+  <script src="js/head.js" type="module"></script>
+  <script src="js/today.js" type="module"></script>
+  <script src="js/region.js" type="module"></script>
 </html>
