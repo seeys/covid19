@@ -1,0 +1,159 @@
+.kmap {
+  position: relative;
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.kmap span:nth-child(2) {
+  font-weight: 600;
+}
+
+.kmap__box {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #dee2e6;
+  background-color: #f8f9fa;
+  padding: 0.5rem;
+}
+
+.kmap__map {
+  display: flex;
+  margin: auto;
+}
+
+.kmap__air {
+  top: 10%;
+  left: 20%;
+}
+
+.kmap__keounggi {
+  top: 8%;
+  left: 38%;
+}
+
+.kmap__inchun {
+  top: 19%;
+  left: 28%;
+}
+
+.kmap__kangwon {
+  top: 12%;
+  right: 38%;
+}
+
+.kmap__seoul {
+  top: 17%;
+  left: 37%;
+}
+
+.kmap__chungnam {
+  top: 38%;
+  left: 33%;
+}
+
+.kmap__sejong {
+  top: 33%;
+  left: 40%;
+}
+
+.kmap__chungbuk {
+  top: 30%;
+  left: 48%;
+}
+
+.kmap__daejun {
+  top: 42%;
+  left: 41%;
+}
+
+.kmap__geongbuk {
+  top: 36%;
+  right: 30%;
+}
+
+.kmap__jeonbuk {
+  top: 53%;
+  left: 40%;
+}
+
+.kmap__daegu {
+  top: 48%;
+  right: 33%;
+}
+
+.kmap__ulsan {
+  top: 52%;
+  right: 25%;
+}
+
+.kmap__gangju {
+  top: 65%;
+  left: 37%;
+}
+
+.kmap__gengnam {
+  top: 60%;
+  right: 37%;
+}
+
+.kmap__busan {
+  top: 61%;
+  right: 29%;
+}
+
+.kmap__jeonnam {
+  top: 75%;
+  left: 36%;
+}
+
+.kmap__jeju {
+  bottom: 4%;
+  left: 34%;
+}
+
+/* SMALL SCREEN */
+@media screen and (max-width: 500px) {
+  .kmap__box span {
+    font-size: 0.1rem;
+  }
+  .kmap__box {
+    padding: 0.2rem;
+  }
+  .kmap__ulsan {
+    top: 52%;
+    right: 12%;
+  }
+  .kmap__busan {
+    top: 61%;
+    right: 19%;
+  }
+  .kmap__chungnam {
+    top: 38%;
+    left: 29%;
+  }
+
+  .kmap__sejong {
+    top: 33%;
+    left: 40%;
+  }
+
+  .kmap__chungbuk {
+    top: 30%;
+    left: 49%;
+  }
+
+  .kmap__daejun {
+    top: 42%;
+    left: 41%;
+  }
+  .kmap__inchun {
+    top: 21%;
+    left: 28%;
+  }
+}
